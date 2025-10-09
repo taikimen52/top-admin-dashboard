@@ -102,19 +102,27 @@ header {
 .main {
     display: flex;
     gap: 15px;
+    padding: 30px 20px;
+}
+
+.main h2 {
+    margin-bottom: 15px;
 }
 
 .pjboard {
     display:grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(auto, minmax(200px, 1fr));
-    gap: 15px;
+    gap: 20px;
 }
 
 .card {
     background-color: aliceblue;
     border-radius: 10px;
     padding: 25px;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
 }
 
 .card .icon {
@@ -126,4 +134,35 @@ header {
 .card .icon img{
     width: 25px;
     height: 25px;
+}
+
+.card h3 {
+    margin-bottom: 8px;
+}
+
+.card p {
+    max-inline-size: 66ch;
+    margin-bottom: 8px;
+}
+
+.notifications {
+    max-width: 27%;
+}
+
+.announce {
+    background-color: aliceblue;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.announce h3 {
+    margin-bottom: 8px;
+}
+
+.announce p {
+    margin-bottom: 20px;
+}
+
+.announce hr {
+    margin-bottom: 20px;
 }
