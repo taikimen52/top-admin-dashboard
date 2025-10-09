@@ -72,7 +72,7 @@ header {
     height: 45px;
 }
 
-.icon {
+.header .icon {
     background-color: lightgray;
     border-radius: 9999px;
 }
@@ -97,4 +97,33 @@ header {
     display: block;
     width: 30px;
     height: 30px;
+}
+
+.main {
+    display: flex;
+    gap: 15px;
+}
+
+.pjboard {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(auto, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.card {
+    background-color: aliceblue;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.card .icon {
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+}
+
+.card .icon img{
+    width: 25px;
+    height: 25px;
 }
