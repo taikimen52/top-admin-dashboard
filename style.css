@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    --card-background-color: aliceblue;
 }
 
 html,body {
@@ -16,8 +17,17 @@ html,body {
 }
 
 .sidebar {
-    background-color: lightblue;
+    background-color: #1992d4;
     grid-row: 1/-1;
+    color: #ffffff;
+}
+
+.sidebar .menu {
+    margin: 8px 8px;
+}
+
+#setting {
+    margin-top: 50px;
 }
 
 
@@ -50,7 +60,7 @@ header {
     gap: 15px;
 }
 
-.headertop .icon {
+.headertop .icon, .account .icon {
     width: 35px;
     height: 35px;
 }
@@ -72,12 +82,9 @@ header {
     height: 45px;
 }
 
-.header .icon {
+.header .icon, .account .icon {
     background-color: lightgray;
     border-radius: 9999px;
-}
-
-.main {
 }
 
 .menu {
@@ -87,16 +94,18 @@ header {
     gap: 15px;
 }
 
-.title.menu img {
+.title.menu svg {
     display: block;
     width: 50px;
     height: 50px;
+    fill: #ffffff;
 }
 
-.menu img {
+.menu svg {
     display: block;
     width: 30px;
     height: 30px;
+    fill: #ffffff;
 }
 
 .main {
@@ -106,7 +115,7 @@ header {
 }
 
 .main h2 {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .pjboard {
@@ -116,19 +125,23 @@ header {
     gap: 20px;
 }
 
-.card {
-    background-color: aliceblue;
+.card, .trending, .announce {
+    background-color: var(--card-background-color);
     border-radius: 10px;
     padding: 25px;
-    min-height: 200px;
-    display: flex;
-    flex-direction: column;
+}
+
+.card {
+    height: 200px;
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
 }
 
 .card .icon {
     display: flex;
-    justify-content: flex-end;
     gap: 30px;
+    margin-top: auto;
+    margin-left: auto;
 }
 
 .card .icon img{
@@ -143,16 +156,12 @@ header {
 .card p {
     max-inline-size: 66ch;
     margin-bottom: 8px;
+    overflow: scroll;
 }
+
 
 .notifications {
     max-width: 27%;
-}
-
-.announce {
-    background-color: aliceblue;
-    padding: 25px;
-    border-radius: 10px;
 }
 
 .announce h3 {
@@ -165,4 +174,16 @@ header {
 
 .announce hr {
     margin-bottom: 20px;
+}
+.account {
+    display: flex;
+    max-height: 400px;
+    overflow: scroll;
+    align-items: center;
+    gap:15px;
+    margin-bottom: 15px;
+}
+
+.topic {
+    margin-top: 15px;
 }
