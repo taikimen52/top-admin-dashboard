@@ -10,3 +10,8 @@ imgタグで呼び出すとカラー指定できないのでsvgコードを埋�
 svgファイルをテキストエディタ（メモ帳）で開くとコードを確認できる。
 htmlにベタ貼りすると可読性低くなるので、svgスプライトを利用することも可能
 参考： https://www.webcreatorbox.com/blog/svg-vector
+
+Robotoを2タイプ使用する。
+Google Fontからダウンロードしてwoff,woff2化
+fontsディレクトリに格納。
+font-familyは同一の命名。font-weightに差をつけて使い分ける。
