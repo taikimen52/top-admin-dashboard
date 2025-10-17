@@ -1,5 +1,5 @@
 # top-admin-dashboard
-The Odin Project exercise in intermediate HTML &amp; CSS lessons
+The Odin Project exercise in intermediate HTML & CSS lessons
 
 flex-direction:columnで最後の要素だけ下端に揃えたい
 →margin-top:auto
@@ -15,3 +15,11 @@ Robotoを2タイプ使用する。
 Google Fontからダウンロードしてwoff,woff2化
 fontsディレクトリに格納。
 font-familyは同一の命名。font-weightに差をつけて使い分ける。
+
+20251017
+サイドバーのSetting上部のマージンをnth-childで指定し、並びが変わっても変更しやすいようにした。
+
+ヘッダー固定し、メインだけが流れるようにした。
+ヘッダーはpositionをstickyに、メインはoverflow:autoに
+
+アイコンをUI用とユーザーアイコンでフォルダ分け、整理
